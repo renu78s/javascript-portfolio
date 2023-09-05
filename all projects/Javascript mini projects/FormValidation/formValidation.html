@@ -1,0 +1,62 @@
+<!-- for styling and responsive design tailwind is used -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="formValidation.css"> -->
+    <link href="../../../dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-rose-400 font-sans text-lg text-white"> 
+       <!-- common nav bar -->
+    <header > 
+         <nav  class="flex justify-around p-5 bg-gray-600/[.1] "> <!--class="nav_bar " -->
+            <a href="../../../index.html" class="uppercase hover:text-xl">home</a><!--class="nav_anchorTag" -->
+            <a href="../../projects.html" class="uppercase hover:text-xl">projects</a><!--class="nav_anchorTag " -->
+            <a href="../quiz app/quiz.html" class="uppercase hover:text-xl">next project</a><!--class="nav_anchorTag " -->
+         </nav> 
+    </header>
+
+    <div  class="flex p-1 justify-between">  <!--class="nav_bar_main" -->
+        <h1 >Login Page</h1>
+        <button class="answers text-black bg-white rounded p-4">answers</button>
+    </div>
+    <div class="allAnswers hidden">
+        user id = renu <br>
+        user password = 123 <br>
+        user email = any email with proper syntax<br>
+    </div>
+    <div class="flex justify-center border-2 border-fuchsia-600 ">
+      <form class="border-2 border-fuchsia-600 shadow-lg shadow-fuchsia-800/50 flex  flex-col md:w-1/2 p-3  capitalize" onSubmit="return submitall()">  <!--class="form" -->
+        <label >user id</label>
+        <input class="inputs" type='text' name='username' id='username' />  
+
+        <div id="names" class="Error-color"></div>
+        <br>
+
+        <label >user password</label>  
+        <input class="inputs" type='password' name='password' id='password' class="inputs text-black"/>  
+
+        <div id="pass" class="Error-color"></div>
+        <br>
+
+        <label >user email</label>
+        <input class="inputs" type="text" id="email"  class="inputs"/>       
+
+        <div id="mailError" class="Error-color"></div>
+        <br>
+
+        <input type="submit" value="login" class=" uppercase w-1/2 self-center font-bold border-2 rounded">
+      </form>
+
+    </div>
+<script src="formValidation.js"></script>
+   
+
+
+  
+
+</body>
+</html>

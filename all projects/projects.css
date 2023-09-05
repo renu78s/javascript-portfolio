@@ -1,0 +1,204 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body {
+    font-family: 'Lobster', cursive !important;
+    background-color: black !important;
+
+}
+.background_video{
+    width: 100%;
+}
+
+/* grid : layout of full page */
+.main_container{
+    position: fixed;
+    top: 0px;
+    display: grid;
+    grid-template-columns:10% 80% 10% ;
+    grid-template-rows:20% 70% 10%;
+    height: 100%;
+    width: 100%;
+    row-gap: 10px;
+
+}
+.header{
+    grid-area:1/1/2/4 ;
+
+}
+.main{
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer{
+    grid-area: 3/1/4/4;
+
+}
+/* first containers inside header main footer */
+.nav_bar{
+    display:flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+
+}
+
+.project_page_container{
+    background-color: rgba(51, 51, 146, 0.3);
+    color:  rgba(255,255,255,0.9);  
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 40px;
+     
+}
+.resume_page_container{
+    background-color: rgba(51, 51, 146, 0.3);
+    color:  rgba(255,255,255,0.9); 
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 40px;
+    font-size: 20px;
+}
+
+/* sub conatiners */
+.nav_anchorTag{
+    text-decoration: none;
+    padding: 1
+    0px;
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-transform : uppercase;
+    color:  rgba(255,255,255,0.9);
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
+    border:none;
+}
+.coverPage_anchorTag{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-transform : capitalize;
+    margin: 5px;
+    color:  rgba(255,255,255,0.9) ;
+    font-family: 'Pacifico', cursive;
+
+}
+/* first containers and sub conatiners hover */
+.coverPage_anchorTag:hover{
+    color: white;
+    background-color: rgba(89, 89, 148, 0.5);
+}
+
+.nav_anchorTag:hover{
+    font-size: xx-large;
+    cursor: pointer;
+   
+}
+
+.project_page_container:hover{
+    background-color: rgba(51, 51, 146, 0.5);
+    color:  white;
+    cursor: pointer;
+    
+
+}
+
+.resume_page_container:hover{
+    background-color: rgba(51, 51, 146, 0.5);
+    color:  white;
+    cursor: pointer;
+
+}
+
+/* .name_image{
+    width: 100px;
+    border-radius: 50%;
+
+} */
+
+/* 
+} */
+/* 
+
+.resume_page_container::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+    background: transparent;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    animation: animate 4s linear forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+   
+}
+@keyframes animate {
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color:  rgba(255,255,255,0.9);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0px;
+        border-top-color:  rgba(255,255,255,0.9);
+        border-right-color: rgba(255,255,255,0.9) ;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:  rgba(255,255,255,0.9);
+        border-right-color:  rgba(255,255,255,0.9);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+}  */
+/* inside divs */
+.intro{
+    font-size: 20px;
+    padding: 5px;
+}
+b{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.border_animation{
+    border: 2px solid transparent;
+    animation: animate2 1s linear forwards;
+    animation-iteration-count: 5;
+    /* animation-delay: 1s; */
+   
+}
+@keyframes animate2 {
+ from{
+    border : 2px solid white;
+ }
+ to{
+    border: 2px solid transparent;
+ }
+}
+
+@media (max-width:1000px) {
+    .main_container{
+        position: absolute;
+        top: 0px;
+    }
+}
+

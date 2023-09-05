@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Alarm.css">
+</head>
+<body>
+       <!-- common nav bar -->
+    <header class="header"> 
+        <nav class="nav_bar">
+            <a href="../../../index.html" class="nav_anchorTag">home</a>
+            <a href="../../projects.html" class="nav_anchorTag">projects</a>
+            <a href="../FormValidation/formValidation.html" class="nav_anchorTag">next project</a>
+         </nav> 
+    </header>
+
+    <div class="container">
+        <div>
+            <img src="pictures/alarm-clock1.gif" class="image" alt="Alarm" width="70px" height="60px">
+            <audio src="audio/twirling-alarm-tone.mp3" class="audioStatus"></audio>
+        </div>
+        <div class="display-time">
+            <span class="time">hour</span>:
+            <span class="time">minutes</span>:
+            <span class="time">seconds</span>
+            <span class="amPM">AM</span>
+        </div>
+        <div class="set-alarm-container">
+            <span class="set_alarm_select">
+                <select class="mySelect">
+                    <option value="0" " >Hour</option>               
+                </select>
+            </span>
+            <span class="set_alarm_select">
+                <select class="mySelect">
+                    <option value="0" " >Minutes</option>
+                </select>
+            </span>
+            <span class="set_alarm_select">
+                <select class="mySelect">
+                    <option value="AM" >AM</option>
+                    <option value="PM" >PM</option>
+                </select>
+            </span>
+        </div>
+        <button class="button-set-alarm">Set Alarm</button>
+    </div>
+    <script src="Alarm.js"></script>
+</body>
+</html>

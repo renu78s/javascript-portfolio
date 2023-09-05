@@ -1,0 +1,61 @@
+<!-- styling with sass and css and mediaquery-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="typingSpeedTest.css"> -->
+    <link rel="stylesheet" href="../../../sass/css/sass.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- common nav bar -->
+     <header class="header"> 
+        <nav class="nav_bar">
+            <a href="../../../index.html" class="nav_anchorTag">home</a>
+            <a href="../../projects.html" class="nav_anchorTag">projects</a>
+            <a href="../Alarm clock/Alarm.html" class="nav_anchorTag">next project</a>
+         </nav> 
+    </header>
+    <div class="main_container">
+   
+        <div class="typingSpeed_container">
+            <h1>Know Your Typing Speed</h1>
+            <br>
+            <p class="resultField">Click on Start , just type in text feild the same paragraphs/lines provided in paragraphs/lines box and click on done to get your results.</p>
+            <table class="resultTable">
+                <tr>
+                    <td colspan="2">total words given</td>
+                    <td class="results"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">total words typed </td>
+                    <td class="results"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">correctwords </td>
+                    <td class="results"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> wrongwords </td>
+                    <td class="results"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">timetaken per minute to type words</td>
+                    <td class="results"></td>
+                </tr>
+            </table>
+            <br><br>
+            <div class="paragrapes_lines">you will see paragraphs and lines here .... </div>
+            <br>
+            <textarea class="text_area" placeholder="Type the text provided above."></textarea>
+            <br><br>
+            <button class="start_done_btn">Start</button>
+
+        </div>
+    </div>
+    
+    <script src="typingSpeedTest.js"></script>
+</body>
+</html>

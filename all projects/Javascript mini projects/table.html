@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* nav bar  */
+        .nav_bar{
+            display:flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: rgba(46, 38, 38, 0.911);
+        }
+        .nav_anchorTag{
+            text-decoration: none;
+            padding: 1
+            0px;
+            font-size: large;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            text-transform : uppercase;
+            color:  rgba(255,255,255,0.9);
+            font-family: 'Pacifico', cursive;
+            background-color: transparent;
+            border:none;
+        }
+        .nav_anchorTag:hover{
+            font-size: xx-large;
+            cursor: pointer;
+        
+        }
+        .container{
+            width: 100vw;
+            background-color: rgb(78, 194, 194);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .sub_container{
+            width: 50vw;
+            background-color: rgb(117, 49, 180);
+            min-height: 50vh;
+            padding: 10px;
+            font-size: larger;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        
+        }
+        @media (max-width:780px) {
+            .sub_container{
+                width: 100%;
+                }
+            }
+            .box{
+            background-color: rgb(192, 82, 115);
+            padding: 10px;
+            color: white;
+            min-height: 250px;
+            min-width: 100%;
+            border-radius: 10px;
+        }
+        .input , .button1{
+            width:15rem;
+            height: 3rem;
+            font-size: large;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <nav class="nav_bar">
+            <a href="../../../index.html" class="nav_anchorTag">home</a>
+            <a href="../projects.html" class="nav_anchorTag">projects</a>
+            <a href="../Javascript mini projects/simple input/input.html" class="nav_anchorTag">next project</a>
+         </nav> 
+    </header>
+
+    <div class="container">
+        <div class="sub_container">
+            know the table of any number , just enter the number : 
+            <br>
+            <input type="number" class="input" value="">
+            <br>
+            <button class="button1">click me</button>
+            <div class="box" ></div>
+        </div>
+    </div>
+
+    <script>
+        let box = document.getElementsByClassName('box')[0];
+        let input = document.getElementsByClassName('input')[0];
+        let button = document.getElementsByClassName('button1')[0];
+        let yes = true ;
+        console.log(button.innerHTML)
+        const displayNumbers = () => {
+            for(let i=1 ; i<=10 ; i++){
+                 //elements created on click
+            let collectAll =  document.createElement("div");
+            let number = document.createElement("span");
+            let multiplerSign = document.createElement("span");
+            let multipler = document.createElement("span");
+            let equalsTO = document.createElement("span");
+            let result = document.createElement("span");
+            //innerhtml of elements
+            number.innerHTML = input.value;
+            multiplerSign.innerHTML = " x " ;
+            multipler.innerHTML = i ;
+            equalsTO.innerHTML = " = " ;
+            let formula1 = Number(number.innerHTML) *  multipler.innerHTML;
+            result.innerHTML = formula1 ;
+        
+            
+            let a = collectAll.appendChild(number);
+            let b = collectAll.appendChild(multiplerSign);
+            let c = collectAll.appendChild(multipler);
+            let d = collectAll.appendChild(equalsTO);
+            let e = collectAll.appendChild(result);
+         
+            box.appendChild(collectAll) ;
+            yes = false ;
+            }
+            
+        }
+        button.addEventListener('click',()=>{
+            if(yes == true && input.value != ""){
+                displayNumbers();
+                button.innerHTML = "clear me";
+            }else{
+                box.innerHTML = " ";
+                input.value = " ";
+                button.innerHTML = "click me";
+                yes = true ;
+            }
+            
+            
+        })
+
+
+    </script>
+</body>
+</html>

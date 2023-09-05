@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(54, 20, 85);
+}
+
+/* nav bar  */
+.nav_bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav_anchorTag {
+  text-decoration: none;
+  padding: 1 0px;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Pacifico", cursive;
+  background-color: transparent;
+  border: none;
+}
+.nav_anchorTag:hover {
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+/* navbar over */
+.main_container {
+  height: 100vh;
+  position: absolute;
+  color: aliceblue;
+  font-size: large;
+}
+
+.typingSpeed_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.paragrapes_lines {
+  height: 200px;
+  padding: 10px;
+  font-size: " ";
+  background-color: rgb(138, 101, 159);
+  border-radius: 20px;
+}
+
+.text_area {
+  height: 200px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.start_done_btn {
+  height: 40px;
+  padding: "";
+  font-size: larger;
+  background-color: rgb(98, 84, 111);
+  color: white;
+  border-radius: 20px;
+}
+
+td {
+  height: "";
+  padding: 5px;
+  font-size: "";
+}
+
+.resultTable {
+  display: none;
+  border: 2px solid white;
+  border-collapse: collapse;
+  text-align: left;
+}/*# sourceMappingURL=sass.css.map */

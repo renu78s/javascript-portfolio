@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- bootstrap cdn js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- google icons link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <!-- static goole font link  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- static goole font link  for post board comment count-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!-- static goole font link  for post board like count-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!-- static goole font link  for post board share count-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!-- css file link -->
+    <link rel="stylesheet" href="socialMedia.css">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery photo upload css link -->
+    <link rel="stylesheet" href="jqueryPlugins/drag-drop-image-uploader/src/image-uploader.css">
+    <!-- jquery photo upload js link -->
+    <script src="jqueryPlugins/drag-drop-image-uploader/src/image-uploader.js"></script>
+    <!-- bootstrap icons cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>social media</title>
+</head>
+<body >
+                                           <!-- common nav bar -->
+  <header class="header"> 
+    <nav class="nav_bar">
+        <a href="../../../index.html" class="nav_anchorTag">home</a>
+        <a href="../../projects.html" class="nav_anchorTag">projects</a>
+        <a href="../../../index.html" class="nav_anchorTag">next project</a>
+    </nav> 
+</header>
+
+                                     <!-- grid template bootstrap -->
+                                       <!-- whole page container -->
+  <div class=".container row ">
+                                    <!-- header part top nav bar -->                              
+    <header class="col-12">
+      <!-- only 1 section in hearder i.e top nav bar  -->
+      <section class="row">
+        <!-- nav bar part it contains 2 divs -->
+        <nav class="navbar navbar-expand-lg row col-12 top_navBar d-flex">
+          <div  class="col-1"></div> 
+          <!--div 1 in nav bar-->
+          <div class="col-5 d-flex  flex-row ">
+            <!-- webiste logo with link -->
+            <a class="navbar-brand" href="#"><img src="pictures/speakerIcon.jpg" alt="logo" width="30px"></a>
+            <!-- form for seacrh bar and  icon button -->
+            <form class="d-flex " role="search">
+            
+              <!-- search input bar -->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <!-- search icon button -->
+              <button class="btn  " type="submit">
+                <span class="material-icons">
+                 search
+                </span>
+              </button>
+            </form>
+          </div>
+          <!--div 2 in nav bar-->
+          <div class="col-5  collapse navbar-collapse " id="navbarSupportedContent"  style=" display: flex; justify-content: flex-end;" >
+            <ul class="navbar-nav   " >
+              <!-- home -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                </a>
+                <!-- home dropdown-->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- pages -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      pages
+                </a>
+                <!-- pages dropdown-->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- account -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      account
+                </a>
+                <!-- account dropdown-->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- my network link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">mynetwork</a>
+              </li>
+              <!-- chat icon with link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="material-icons">chat</span></a>
+              </li>
+              <!-- settings icon with link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="material-icons">settings</span></a>
+              </li>
+              <!-- notification icon with link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="material-icons">notifications</span></a>
+              </li>
+              <!-- image with link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="pictures/profilePic.jpg" alt="profile-pic" width="30px" height="30px"></a>
+              </li>
+            </ul> 
+          </div>
+          <div  class="col-1"></div> 
+        </nav>
+      </section>
+    </header>
+
+                                <!-- main part -- side nav bars and main content -->
+    <main class="row">
+
+                                  <!-- section1 for side left bar -->
+    
+      <section class="col-3 ">
+                            <!-- row for inner content of top/first side left bar -->
+        <div class="row">
+          <div class="col-12 left_side_navBar top_left_navBar " id=""> 
+            
+              <!-- profile detail box -->
+             
+                <img src="pictures/left_sideBar_top_picture.jpg" alt="nature" class="topLeft_navBar_image">
+                <div class="card leftBar_card">
+                  <img src=""  alt="..." class="leftBar_image">
+                  <div class="card-body leftBar_cardBody">
+                    <h5 class="card-title profileName">name</h5>
+                    <p class="card-text occupation">occupation</p>
+                    <p class="card-text description">description</p>
+                  </div>
+                </div>
+              <!-- data numerical -->
+              <div class="post_row">
+                <div class="post_number post_border">
+                  <h5 class="card-title">000</h5>
+                  <p class="card-text">Post</p>
+                </div>
+                <div class="post_number post_border">
+                  <h5 class="card-title">000</h5>
+                  <p class="card-text">Followers</p>
+                </div>
+                <div class="post_number">
+                  <h5 class="card-title">000</h5>
+                  <p class="card-text">Following</p>
+                </div>
+              </div>
+              <!-- data numerical end -->
+              <!-- anchor tags with colored icons starts -->
+              <div class="leftBar_anchortagIcons">
+                
+                <a href="" class="leftBar_anchorTags">
+                  <img src="pictures/leftBar_icons/home.png" alt="" width="30px"> Feed</a><br>
+                <a href="" class="leftBar_anchorTags">
+                  <img src="pictures/leftBar_icons/user.png" alt="" width="30px"> Connections</a><br>
+                <a href="" class="leftBar_anchorTags">
+                  <img src="pictures/leftBar_icons/world-globe.png" alt="" width="30px"> Latest News</a><br>
+                <a href="" class="leftBar_anchorTags">
+                  <img src="pictures/leftBar_icons/planner.png" alt="" width="30px"> Events</a><br>
+                <a href="" class="leftBar_anchorTags">
+                  <img src="pictures/leftBar_icons/chat.png" alt="" width="30px"> Groups</a><br>
+                <a href="" class="leftBar_anchorTags">
+                  <img src="pictures/leftBar_icons/bell.png" alt="" width="30px"> Notifications</a><br>
+                <a href="" class="leftBar_anchorTags">
+                  <img src="pictures/leftBar_icons/gear.png" alt="" width="30px"> Settings</a>
+              </div>
+              <!-- anchor tags with colored icons ends -->
+              <!-- view profile starts-->
+              <div  class="leftBar_view_profile">
+                <a href=""  class="leftBar_view_profile" >view profile</a>
+              </div>
+             <!-- view profile ends-->
+              </div>
+              
+            
+    
+        </div>
+                              <!-- row for inner content of bottom/second side left bar -->
+        <div class="row">
+          <div class="col-12 left_side_navBar_bottom"> 
+            
+          </div>
+        </div>
+      </section>
+
+                                  <!-- section2 for  story board and posts -->
+                                 
+      <section class="col-6 section2">
+        <!-- row for inner content of story board -->
+        <div class="row">
+          <div class="col-12 story_board d-flex ">
+            <span class="profile_pic_container">
+              <div class="add_story">
+                <button class="plus_add_story">
+                  <span class="material-icons">
+                    add
+                  </span>
+                </button>
+                <p class="post_story">post a story</p>
+              </div>
+            </span>
+          </div>
+          <div  class="button_pre_next_div">
+            <button class="button_prev" type="button"><i class="bi bi-caret-left-fill colored_icon_next"></i></button>
+            <button class="button_next" type="button" ><i class="bi bi-caret-right-fill colored_icon_next"></i></button>
+          </div>
+        </div>
+
+        <!-- row for share your thoughts section -->
+      
+        <form action="url" enctype="multipart/form-data" class="pop_image_uploader">
+          <div class="input-images"><span  class="drag_drop">close</span></div>
+        </form>
+        <div class="row">
+          <div class="col-xs-12 shareThoughts_board"> 
+            <div class="shareThoughts_image_input" >
+              <img src="pictures/othersProfilePicture1.jpg" alt="pic" class="post_board_image">
+              <input type="text" placeholder="share your thoughts" class="shareThoughts_input">
+            </div>
+            <div class="shareThoughts_all_button"  >
+              <div class="shareThoughts_buttons" >
+                <button class="shareThoughts_button"><img src="pictures/shareThoughts_icons_pictures/photos.png" alt="" width="30px"> photo</button>
+                <button class="shareThoughts_button"><img src="pictures/shareThoughts_icons_pictures/video-camera.png" alt="" width="30px"> video</button>
+                <button class="shareThoughts_button"><img src="pictures/shareThoughts_icons_pictures/calendar.png" alt="" width="30px"> event</button>
+                <button class="shareThoughts_button"><img src="pictures/shareThoughts_icons_pictures/smile.png" alt="" width="30px"> feeling/activity</button>
+              </div>
+            <div>
+              <button class="shareThoughts_button">
+                ...
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- row for inner content of post board -->
+        <div class="row">
+          <div class="col-xs-12 post_board post_board_Top "  style="display:flex ;flex-direction: column;">   <!--main column-->
+            
+
+        
+          </div><!--post board colunm ends-->
+        </div><!--post board row ends-->
+      </section>
+
+                                    <!-- section3 for side right bar -->
+      <section class="col-3 ">
+        <!-- row for inner content of top right side bar -->
+        <div class="row">
+          <div class="col-12 right_Side_Bar rightBar_checklists" id=""> 
+            <!-- right side first box -->
+  
+            <div>
+              <h6 class="rightBar_heading">who to follow</h6>
+            </div>
+            <div class="rightBar_checklists_all">
+
+            </div>
+
+            <button class="rightBar_viewMore_button">
+                  view more
+            </button>
+            
+          </div>
+        </div>
+        
+        <!-- row for inner content of bottom right side bar -->
+        <div class="row">
+          <div class="col-12 right_Side_Bar"> 
+            
+          </div>
+        </div>
+        
+      </section>
+    </main>
+  </div>
+
+    <script src="socialMedia.js"></script>
+</body>
+</html>

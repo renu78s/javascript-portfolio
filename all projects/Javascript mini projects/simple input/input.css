@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+/* nav bar  */
+.nav_bar{
+    display:flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.1);
+}
+.nav_anchorTag{
+    text-decoration: none;
+    padding: 1
+    0px;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-transform : uppercase;
+    color:  rgba(255,255,255,0.9);
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
+    border:none;
+}
+.nav_anchorTag:hover{
+    font-size: xx-large;
+    cursor: pointer;
+   
+}
+/* navbar over */
+h1,h2{
+    text-transform: capitalize;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main_container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-width: 50vw;
+    min-height: 50vh;
+    font-size: large;
+    background-color: grey;
+}
+
+
+.only_numbers{
+    max-width: 400px;
+    height: 60px;
+    padding: 4px;
+    font-size: large;
+    
+}
+.show_input{
+    min-width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 4px;
+    background-color: beige;
+}

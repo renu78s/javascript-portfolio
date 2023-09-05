@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.Error-color{
+    @apply hidden text-red-800;
+}
+
+.inputs{
+    @apply text-black rounded p-1 pl-1;
+}
